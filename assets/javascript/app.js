@@ -7,6 +7,9 @@ $(document).ready(function(){
     var contentBlockHeight = h/2 - 22;
     // $('.content-block').css('height', contentBlockHeight + 'px');
     $('.main-display').css('height', h + 'px');
+    $('.verticalBar-wrapper').css('min-height', h+'px');
+    $('.content-wrapper').css('min-height', h+'px');
+    $('.background-img').css('min-height', h+'px');
   }
 
   $("#skills").click(function() {
