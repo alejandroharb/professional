@@ -5,9 +5,15 @@ $(document).ready(function(){
 
   if(h > 550) {
     var contentBlockHeight = h/2 - 22;
-    $('.content-block').css('height', contentBlockHeight + 'px');
+    // $('.content-block').css('height', contentBlockHeight + 'px');
     $('.main-display').css('height', h + 'px');
   }
+
+  $("#skills").click(function() {
+    $('.content-wrapper').animate({
+        scrollTop: $(".skill-wrapper").offset().top
+    }, 2000);
+});
 
   // setContentBlockDimension();
 
