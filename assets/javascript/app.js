@@ -10,7 +10,7 @@ $(document).ready(function(){
     }
   };
 
-  
+
 
   setContentBlockDimension();
   addEvent(window, "resize", setContentBlockDimension);
@@ -19,9 +19,13 @@ $(document).ready(function(){
     $('.content-wrapper').animate({
         scrollTop: $(".skill-wrapper").offset().top
     }, 2000);
-
-  
-});
+    // ---------Trigger skill bar---------
+    jQuery('.skillbar').each(function(){
+  		jQuery(this).find('.skillbar-bar').animate({
+  			width:jQuery(this).attr('data-percent')
+  		},6000);
+  	});
+  });
 
 
 
@@ -35,7 +39,7 @@ $(document).ready(function(){
       $('.verticalBar-wrapper').css('min-height', h+'px');
       $('.content-wrapper').css('min-height', h+'px');
       $('.background-img').css('min-height', h+'px');
-    
+
   }
 
   // ---------skill bar---------
@@ -44,5 +48,5 @@ $(document).ready(function(){
 			width:jQuery(this).attr('data-percent')
 		},6000);
 	});
-  
+
 });

@@ -103,9 +103,24 @@ nav{
 	font-size:24px;
 	margin:0 auto 18px auto;
 }
-/*.card {
-  min-height:300px;
-}*/
+.emphasis{
+  font-weight: 600;
+  font-size:16px;
+}
+
+.card-padded{
+  padding: 15px;
+  width: 85%;
+  display: block;
+  margin: 18px auto;
+}
+.card-content h2{
+  margin:0 auto;
+}
+.card-content h3{
+  margin-top:5px;
+}
+
 .card-title{
   right:0;
   text-align: center!important;
