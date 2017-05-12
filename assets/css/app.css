@@ -321,3 +321,11 @@ text-align: center;
   width:200px;
   height:200px;
 }
+
+@media (min-width: 0) and (max-width: 601px){
+  .content-wrapper{
+    position: relative;
+    margin-top: 0;
+    border-top:1px solid #636164;
+  }
+}
