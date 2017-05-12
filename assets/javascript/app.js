@@ -10,14 +10,21 @@ $(document).ready(function(){
     }
   };
 
-
+  //project image hover effects
+  $('.img-container.card').hover( function(){
+    $(this).find('.overlay').hide();
+    $(this).find('.proj-title').hide();
+  }, function(){
+    $(this).find('.overlay').show();
+    $(this).find('.proj-title').show();
+  })
 
   setContentBlockDimension();
   addEvent(window, "resize", setContentBlockDimension);
 
-  $("#skills").click(function() {
+  $("#projects").click(function() {
     $('.content-wrapper').animate({
-        scrollTop: $(".skill-wrapper").offset().top
+        scrollTop: $("#projects-wrapper").offset().top
     }, 2000);
     // ---------Trigger skill bar---------
     jQuery('.skillbar').each(function(){
@@ -48,5 +55,7 @@ $(document).ready(function(){
 			width:jQuery(this).attr('data-percent')
 		},6000);
 	});
+
+
 
 });
